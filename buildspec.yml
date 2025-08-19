@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Install phase (nothing to install for HTML/CSS)"
+  build:
+    commands:
+      - echo "Build phase (pass-through for static files)"
+
+artifacts:
+  files:
+    - '**/*'
+  # optional: exclude dotfiles and Git metadata if any
+  discard-paths: no
